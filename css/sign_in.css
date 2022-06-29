@@ -1,0 +1,157 @@
+        /* nav bar */
+        .nav_logo{
+            width: 100px;
+        }
+        
+
+        /* css for sign in page */
+        @media all and (min-width:1515px){
+          .login_facebook_button,.login_google_button,.login_button{
+            width: 50%;
+          }
+        }
+
+        @media all and (max-width:1515px) and (min-width:1295px){
+          .login_facebook_button,.login_google_button,.login_button{
+            width: 60%;
+          }
+        }
+
+        @media all and (max-width:1295px) and (min-width:1135px){
+          .login_facebook_button,.login_google_button,.login_button{
+            width: 70%;
+          }
+        }
+
+        @media all and (max-width:1135px) and (min-width:1025px){
+          .login_facebook_button,.login_google_button,.login_button{
+            width: 80%;
+          }
+        }
+
+        @media all and (max-width:1025px){
+          .login_facebook_button,.login_google_button,.login_button{
+            width: 100%;
+          }
+        }
+        .login_body{
+            
+            background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+            /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
+            
+
+        }
+        
+        
+        .login_main{
+            /* background-repeat: no-repeat !important;
+            background-attachment: fixed !important; 
+            background: url(media/createAccountBg.png);
+            background-size: 300px;
+            background-repeat: no-repeat;
+            background-position-x: 40px;
+            background-position-y: 150px; */
+            margin-top: 80px; 
+            
+            width: 84%;
+            height: fit-content;
+            margin-left: 8%;
+            margin-right: 8%;
+            margin-bottom: 70px;
+            background-color: rgba(17, 17, 56, 0.9563);
+            /* background-color: rgba(18, 18, 49, 0.95); */
+            border-radius: 20px;
+            box-shadow: 0px 30px 50px rgba(0, 0, 0, 1);
+
+
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            
+        }
+
+        .login_form{
+            width: 40%;
+            
+            background-color: rgba(255, 255, 255, 1) !important;
+            
+            padding: 20px;
+            
+            border: none;
+            
+            
+        }
+
+        .login_image{
+          width: 80%;
+          margin-bottom: 50px;
+        }
+
+        .welcome_message{
+            width: 50%;
+            
+            color: white;
+            
+            padding: 20px;
+            
+            border: none;
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1px;
+            
+        }
+
+        .welcome_text{
+          word-spacing: 8px;
+          letter-spacing: 4px;
+          font-size: 55px;
+        }
+
+        .login_text_line{
+          margin-bottom: 170px;
+        }
+       
+        .login_google_button{
+            /* width: 50%; */
+            margin: 4px;
+            background-color: green;
+            color: white;
+            
+            margin-bottom: 0.5px;
+            
+        }
+        .login_facebook_button{
+            /* width: 50%; */
+            margin: 4px;
+            background-color: #4267B2;
+            color: white;
+            margin-top: 0.5px;
+            
+        }
+        .login_button{
+            /* width: 50%; */
+            margin: 4px;
+            
+        }
+
+        .or_line {
+            display: flex;
+            flex-direction: row;
+            color: rgba(0, 0, 0, 0.26);
+        }
+          
+        .or_line:before,
+        .or_line:after {
+            content: "";
+            flex: 1 1;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+            margin: auto;
+        }
+        
+        .login_link{
+          text-decoration: none;
+        }
+
+        .forgot_password_link{
+            text-decoration: none;
+            
+        }
