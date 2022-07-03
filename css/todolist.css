@@ -1,117 +1,315 @@
-/* css for nav bar */
-.nav_logo{
-    width: 110px;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
 }
 
-/* css for list page */
-.list_body{
-    
-    /* background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%); */
-    background: url(../media/gifbg.gif);
+a{
+    text-decoration: none;
+}
+
+body{
+    background-image: radial-gradient(circle, #57203f, #521e40, #4c1c41, #461a42, #401943, #371940, #2f183c, #271737, #1e152c, #171121, #0f0c16, #0f0c16);
+    /* background-image: radial-gradient(circle, #4b1734, #4a1538, #48143c, #451340, #411345, #3b1343, #341341, #2e133e, #271134, #1f102a, #190c20, #120617); */
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed !important; 
-
 }
 
-@media all and (max-width:1203px){
-  .list_body{
-    
-    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
-    /* background-color: rgba(17, 17, 56, 0.9563); */
-    /* background: url(media/gifbg.gif); */
-    /* background-image: linear-gradient( 135deg, #FFD3A5 10%, #FD6585 100%); */
-    /* background-image: linear-gradient( 135deg, #FAD7A1 10%, #E96D71 100%); */
-    /* background-image: linear-gradient( 135deg, #F97794 10%, #623AA2 100%); */
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed !important; 
-
+.smallerNavbar{
+    display: none;
+}
+.largerNavbar{
+    width: 100%;
+    padding: 25px 3% ;
+}
+.largerNavbar{
+    display: flex;
+    flex-direction: row;
+}
+.navImage{
+    width: 100px;
+    /* padding-left: 20px; */
 }
 
-.entry_form{
-    width: 50%;
-    
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 20px;
-    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.3);
-    border: none;
-    
-    
-}
-.list_main{
-    background-repeat: no-repeat !important;
-    background-attachment: fixed !important; 
-    background: url(../media/list_background.png);
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: 100px;
-    margin-top: 100px;
-}
-}
-.list_main{
-    /* background-repeat: no-repeat !important;
-    background-attachment: fixed !important; 
-    background: url(media/list_background.png);
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: 100px; */
-    margin-top: 100px;
-}
-.entry_form{
-    width: 50%;
-    
-    background-color: rgba(255, 255, 255, 0.92);
-    padding: 20px;
-    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.3);
-    border: none;
-    
-    
-}
-
-.entry_form div{
-    padding-block: 4px;
-}
-.task_button{
-    width: 48%;
-    margin: 4px;
-}
-.display_table{
-    width: 75%;
-    
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 0px;
-    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.3);
-    
-    
-}
-.table_heading{
-    padding:10px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    margin-bottom: 0px;
-    border-bottom: 2.5px solid black;
-}
-.table_header{
-    background-color:  #DC3545;
-    
-}
-
-
-.delete_all_button{
-    width: fit-content;
-    border-radius: 50px;
-    padding: 10px 30px;
-    margin-bottom: 50px;
-}
-/* .date_time{
-  background-color: rgba(41, 38, 38, 0.578);
-
-  padding: 3px 15px;
-  border-radius: 8px;
-  color: white;
-  font-size: large;
+.navTags{
+   align-self: flex-end;
+   width: 100%;
+   margin-left: 3%;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end !important;
   
-} */
+   align-self: center;
+   column-gap: 60px;
+}
+.navItems{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+#currentTab{
+    color: white;
+}
+.navItems:hover{
+    color: white;
+    text-decoration: underline;
+}
+#heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: rgba(0, 0, 0, 0.30); */
+    border: none;
+    padding: 40px 0;
+    font-size: 27px;
+    font-weight: 600;
+    
+}
+#heading div{
+   text-align: center;
+}
+
+.formSection{
+    height: fit-content;
+    width: 100%;
+    padding: 0px 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#new_entry_form{
+    
+    /* align-self: center; */
+    margin-top: 30px;
+    width: 550px;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 40px 40px;
+    border-radius: 15px;
+    border:none;
+    box-shadow: 0  15px 20px black;
+    
+    
+}
+.seperate_line{
+    color:#fc008f;
+    /* color: wheat; */
+    margin: 40px 0px;
+}
+.form-label{
+    font-weight: 600 !important;
+    margin-bottom: 8px;
+}
+.form-control{
+    border:#7b154f 1px solid;
+    /* border: none; */
+    color: white !important;
+    /* background-color:#4c1c41; */
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    border-radius: 10px;
+    box-shadow: 0 0px   15px black;
+    margin-bottom: 35px;
+}
+.giveTextColor, table th, table td{
+    color: rgb(229, 229, 229) !important;
+}
+
+.form_buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.task_button{
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    border:#7b154f 1px solid;
+    padding: 10px 20px;
+    border-radius: 25px;
+    width: 40%;
+    box-shadow: 0 7px 10px black;
+    font-weight: 500;
+    
+}
+
+.task_button:hover{
+    background-color: #7b154f68 !important;
+    width: 42% !important;
+    font-weight: 600;
+}
+.todolist-table{
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+
+}
+
+.todolist-table table{
+    width: 1000px;
+    
+    align-self: center;
+    
+}
+
+.todolist-table table tbody tr th, .todolist-table table tbody tr td{
+    min-width: fit-content;
+    
+}
+.dateColumn{
+    width: 107px !important;
+}
+.fa-trash-can{
+    font-size: 18px;
+    padding-top: 5px;
+    padding-right: 5px;
+
+}
+
+.fa-trash-can:hover{
+    color: rgb(202, 9, 9) !important;
+    cursor: pointer;
+}
+
+
+
+table { 
+    border-collapse: separate; 
+    border-spacing: 0 25px; 
+    margin-top:0px; /* correct offset on first border spacing if desired */
+    
+}
+
+
+tr{
+    box-shadow: 0 10px 15px black;
+    
+}
+tbody tr:hover{
+    background-color: #7b154f68;
+    
+}
+td {
+    border:#7b154f 2px solid;
+    border-style: solid none;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.35);
+    
+}
+td:first-child {
+    border-left-style: solid;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+}
+td:last-child {
+    border-right-style: solid;
+    border-bottom-right-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+th {
+    border:#7b154f 2px solid;
+    border-style: solid none;
+    padding: 10px;
+    padding-top: 12px;
+    
+    background-color: rgba(0, 0, 0, 0.55);
+
+    
+}
+th:first-child {
+    border-left-style: solid;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+}
+th:last-child {
+    border-right-style: solid;
+    border-bottom-right-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+.button_div{
+    margin-top: 35px;
+    margin-bottom: 50px;
+    align-self: center;
+   width: 200px;
+}
+.delete_all_button{
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    border:#7b154f 1px solid;
+    padding: 10px 20px;
+    border-radius: 25px;
+    
+    box-shadow: 0 7px 10px black;
+    font-weight: 500;
+    
+}
+
+.delete_all_button:hover{
+    background-color: #7b154f68 !important;
+    /* width: 110% !important; */
+    font-weight: 600;
+    
+}
+
+@media screen and (max-width:1150px) {
+    .todolist-table table{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:850px){
+    .largerNavbar{
+        display: none;
+    }
+    .smallerNavbar{
+        display: block;
+    }
+
+    #new_entry_form{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width:705px) {
+    #heading{
+        font-size: 20px;
+    }
+}
+
+@media  screen and (max-width: 570px) {
+    #new_entry_fromn{
+        width: 84%;
+    }   
+    
+    .seperate_line{
+        margin: 20px 0;
+    }
+    .form-control{
+        margin-bottom: 25px;
+    }
+    #new_entry_form{
+        padding: 30px 20px;
+    }
+    .task_button{
+        width: 42%;
+    }
+    .task_button:hover{
+        width: 44% !important;
+    }
+    
+    .table{
+        border-spacing: 0 15px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    table td {
+        font-size: small !important;
+    }
+    .task_button, table th, .form-label{
+        font-size: medium !important;
+    }
+    #heading{
+        font-size: 18px;
+    }
+}
